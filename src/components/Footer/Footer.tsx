@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container footer-container">
         <div className="footer-col">
           <div className="footer-logo">
-            <img src="/images/logo-white.png" alt="Aragas Fitness Logo" className="footer-logo-img" />
+            <img src="/images/logo-nova.png" alt="Aragas Fitness Logo" className="footer-logo-img" />
           </div>
           <p className="footer-slogan">
             Cada detalhe inspira. Cada treino transforma.
