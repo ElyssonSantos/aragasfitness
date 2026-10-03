@@ -26,7 +26,7 @@ export function Header() {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container container">
         <a href="#home" className="logo">
-          <img src="/images/logo-nova.png" alt="Aragas Fitness Logo" className="header-logo-img" />
+          <img src="/images/logo-nova-v.png" alt="Aragas Fitness Logo" className="header-logo-img" />
           <span className={`logo-text ${isScrolled ? 'visible' : ''}`}>
             ARAGAS <span className="text-green">FITNESS</span>
           </span>
