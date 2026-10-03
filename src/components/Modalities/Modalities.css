@@ -1,0 +1,136 @@
+.modalities {
+  background-color: var(--color-black);
+}
+
+.modalities-text {
+  font-size: 1.1rem;
+  color: var(--color-white-off);
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.modalities-grid {
+  display: flex;
+  gap: 1rem;
+  height: 350px;
+}
+
+.modality-card {
+  flex: 1;
+  background-color: var(--color-black-secondary);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.modality-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-green-main);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.modalities-grid:not(:hover) .modality-card:first-child,
+.modality-card:hover {
+  flex: 1.5;
+  background-color: var(--color-black-tertiary);
+  border-color: rgba(184, 255, 0, 0.2);
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+.modalities-grid:not(:hover) .modality-card:first-child::before,
+.modality-card:hover::before {
+  transform: scaleX(1);
+}
+
+.modality-icon-wrapper {
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+  transition: all var(--transition-normal);
+}
+
+.modalities-grid:not(:hover) .modality-card:first-child .modality-icon-wrapper,
+.modality-card:hover .modality-icon-wrapper {
+  color: var(--color-green-main);
+  transform: scale(1.2);
+}
+
+.modality-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  transition: color var(--transition-fast);
+}
+
+.modality-desc-wrapper {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.modalities-grid:not(:hover) .modality-card:first-child .modality-desc-wrapper,
+.modality-card:hover .modality-desc-wrapper {
+  height: auto;
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+.modality-desc {
+  font-size: 1rem;
+  color: var(--color-white-off);
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .modalities-grid {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  .modality-card {
+    flex: 1 1 calc(33.333% - 1rem);
+    height: 280px;
+  }
+  
+  .modalities-grid:not(:hover) .modality-card:first-child,
+  .modality-card:hover {
+    flex: 1 1 calc(33.333% - 1rem);
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+@media (max-width: 768px) {
+  .modality-card {
+    flex: 1 1 100%;
+    height: auto;
+  }
+  
+  .modalities-grid:not(:hover) .modality-card:first-child,
+  .modality-card:hover {
+    flex: 1 1 100%;
+    transform: translateY(-5px) scale(1.02);
+  }
+  
+  .modality-desc-wrapper {
+    height: auto;
+    opacity: 1;
+  }
+}

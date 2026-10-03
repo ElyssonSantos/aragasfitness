@@ -1,0 +1,17 @@
+.media-section {
+  background-color: var(--color-white-off);
+  color: var(--color-black);
+}
+
+.media-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+}
+
+@media (max-width: 992px) {
+  .media-container {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
