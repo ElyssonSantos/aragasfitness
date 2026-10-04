@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: '5 Dicas para manter a disciplina na academia',
     category: 'Motivação',
     date: '24 ABR 2026',
-    image: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&h=600&auto=format&fit=crop',
     excerpt: 'Descubra como manter o foco e alcançar seus resultados sem desistir no meio do caminho.',
     author: 'Equipe Aragas',
     content: `
@@ -42,7 +42,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Alimentação e treino: a combinação perfeita',
     category: 'Nutrição',
     date: '18 ABR 2026',
-    image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&h=600&auto=format&fit=crop',
     excerpt: 'Entenda por que a sua dieta é tão importante quanto o peso que você levanta.',
     author: 'Nutricionista Aragas',
     content: `
