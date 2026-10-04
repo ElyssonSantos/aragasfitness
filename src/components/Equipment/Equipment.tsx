@@ -6,6 +6,8 @@ const equipments = [
     id: 'maquinas',
     title: 'MÁQUINAS MODERNAS',
     image: '/images/equip_maquinas.webp',
+    width: 800,
+    height: 800,
     icon: BoxSelect,
     className: 'equip-large'
   },
@@ -13,6 +15,8 @@ const equipments = [
     id: 'cardio',
     title: 'CARDIO',
     image: 'https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=800&h=800&auto=format&fit=crop',
+    width: 800,
+    height: 800,
     icon: HeartPulse,
     className: 'equip-small'
   },
@@ -20,6 +24,8 @@ const equipments = [
     id: 'funcional',
     title: 'TREINO FUNCIONAL',
     image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&h=800&auto=format&fit=crop',
+    width: 800,
+    height: 800,
     icon: Activity,
     className: 'equip-small'
   },
@@ -27,6 +33,8 @@ const equipments = [
     id: 'ambiente',
     title: 'AMBIENTE CLIMATIZADO',
     image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&h=800&auto=format&fit=crop',
+    width: 1200,
+    height: 800,
     icon: Wind,
     className: 'equip-wide'
   }
@@ -50,7 +58,7 @@ export function Equipment() {
             const Icon = eq.icon;
             return (
               <div key={eq.id} className={`equipment-item ${eq.className}`}>
-                <img src={eq.image} alt={eq.title} className="equipment-img" loading="lazy" />
+                <img src={eq.image} alt={eq.title} className="equipment-img" loading="lazy" width={eq.width} height={eq.height} />
                 <div className="equipment-overlay">
                   <div className="equipment-content">
                     <Icon className="equipment-icon" size={32} />

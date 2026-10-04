@@ -12,7 +12,7 @@ export function Hero() {
           loop
           muted
           playsInline
-          poster="/images/hero.png"
+          poster="/images/hero.jpg"
           className="hero-img"
         />
       </div>
