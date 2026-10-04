@@ -24,7 +24,7 @@ export function BlogPost() {
       <div className={`blog-post-page ${isLightMode ? 'light-mode' : ''}`}>
         <Header />
         <div className="container not-found">
-          <h2>Post não encontrado</h2>
+          <h1>Post não encontrado</h1>
           <Link to="/" className="btn-back">
             <ArrowLeft size={20} /> Voltar para o início
           </Link>
@@ -72,7 +72,7 @@ export function BlogPost() {
           </header>
 
           <figure className="post-image-container">
-            <img src={post.image} alt={post.title} className="post-main-image" />
+            <img src={post.image} alt={post.title} className="post-main-image" width="800" height="400" />
             <figcaption>Imagem ilustrativa - Aragas Fitness</figcaption>
           </figure>
 
@@ -84,14 +84,14 @@ export function BlogPost() {
 
         <aside className="post-sidebar">
           <div className="sidebar-widget">
-            <h3 className="widget-title">Últimas Notícias</h3>
+            <h2 className="widget-title">Últimas Notícias</h2>
             <ul className="recent-posts">
               {blogPosts.filter(p => p.id !== post.id).map(recentPost => (
                 <li key={recentPost.id} className="recent-post-item">
                   <Link to={`/blog/${recentPost.id}`} className="recent-post-link">
-                    <img src={recentPost.image} alt={recentPost.title} className="recent-post-thumb" />
+                    <img src={recentPost.image} alt={recentPost.title} className="recent-post-thumb" loading="lazy" width="80" height="80" />
                     <div className="recent-post-info">
-                      <h4>{recentPost.title}</h4>
+                      <h3>{recentPost.title}</h3>
                       <span>{recentPost.date}</span>
                     </div>
                   </Link>
@@ -101,7 +101,7 @@ export function BlogPost() {
           </div>
           
           <div className="sidebar-widget call-to-action">
-            <h3>Venha treinar com a gente!</h3>
+            <h2>Venha treinar com a gente!</h2>
             <p>Conheça nossos planos e comece hoje mesmo sua transformação.</p>
             <Link to="/#planos" className="btn-primary">Ver Planos</Link>
           </div>

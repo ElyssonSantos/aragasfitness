@@ -8,9 +8,12 @@ export function FinalCTA() {
         <div className="final-cta-overlay"></div>
         {/* Placeholder image, fallback to hero if cta_bg is not available yet */}
         <img 
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600&auto=format&fit=crop" 
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600&h=600&auto=format&fit=crop" 
           alt="Vem pra Aragas Fitness" 
           className="final-cta-img" 
+          loading="lazy"
+          width="1600"
+          height="600"
           onError={(e) => {
             (e.target as HTMLImageElement).src = '/images/hero.webp';
           }} 

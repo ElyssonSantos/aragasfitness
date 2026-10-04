@@ -40,7 +40,7 @@ export function Instagram() {
             rel="noopener noreferrer"
             className="insta-item"
           >
-            <img src={post.image} alt="Instagram Post" className="insta-img" />
+            <img src={post.image} alt="Instagram Post" className="insta-img" loading="lazy" />
             <div className="insta-overlay">
               <InstaIcon size={32} color="#FFFFFF" />
             </div>

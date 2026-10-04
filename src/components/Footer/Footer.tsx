@@ -16,7 +16,7 @@ export function Footer() {
         </div>
 
         <div className="footer-col">
-          <h4 className="footer-title">CONTATO E LOCALIZAÇÃO</h4>
+          <h2 className="footer-title">CONTATO E LOCALIZAÇÃO</h2>
           <ul className="footer-contact">
             <li>
               <MapPin className="footer-icon" size={18} />
@@ -32,7 +32,7 @@ export function Footer() {
           </ul>
         </div>
         <div className="footer-col">
-          <h4 className="footer-title">NAVEGAÇÃO</h4>
+          <h2 className="footer-title">NAVEGAÇÃO</h2>
           <ul className="footer-links">
             <li><a href="#home">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
@@ -47,7 +47,7 @@ export function Footer() {
         </div>
 
         <div className="footer-col">
-          <h4 className="footer-title">REDES SOCIAIS</h4>
+          <h2 className="footer-title">REDES SOCIAIS</h2>
           <div className="footer-socials">
             <a href="https://www.instagram.com/aragas.fitness/" target="_blank" rel="noopener noreferrer" className="social-link">
               <Instagram size={20} />
@@ -60,14 +60,14 @@ export function Footer() {
           </div>
 
           <div className="mt-4">
-            <h4 className="footer-title">MAIS INFORMAÇÕES</h4>
+            <h2 className="footer-title">MAIS INFORMAÇÕES</h2>
             <a href="/trabalhe-conosco" className="social-link">
               Trabalhe conosco
             </a>
           </div>
           {/* HORÁRIO DE FUNCIONAMENTO (A DEFINIR NO FUTURO) 
           <div className="footer-hours mt-4">
-            <h4 className="footer-title">HORÁRIOS</h4>
+            <h2 className="footer-title">HORÁRIOS</h2>
             <p>Segunda a Sexta: --:-- às --:--</p>
             <p>Sábado: --:-- às --:--</p>
           </div>

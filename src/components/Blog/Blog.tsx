@@ -18,7 +18,7 @@ export function Blog() {
         {blogPosts.map((post) => (
           <Link key={post.id} to={`/blog/${post.id}`} className="blog-card" style={{ textDecoration: 'none' }}>
             <div className="blog-img-wrapper">
-              <img src={post.image} alt={post.title} className="blog-img" />
+              <img src={post.image} alt={post.title} className="blog-img" loading="lazy" />
               <div className="blog-date">{post.date}</div>
             </div>
             <div className="blog-content">

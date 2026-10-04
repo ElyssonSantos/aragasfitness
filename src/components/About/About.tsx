@@ -30,7 +30,7 @@ export function About() {
 
         <div className="about-image-wrapper reveal">
           <div className="about-image-decoration"></div>
-          <img src="/images/interior.jpg" alt="Estrutura da Aragas Fitness" className="about-image" />
+          <img src="/images/interior.jpg" alt="Estrutura da Aragas Fitness" className="about-image" loading="lazy" width="600" height="400" />
 
           <div className="about-badges">
             <div className="badge">
