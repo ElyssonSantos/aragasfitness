@@ -16,7 +16,7 @@ export function Blog() {
 
       <div className="blog-grid reveal">
         {blogPosts.map((post) => (
-          <article key={post.id} className="blog-card">
+          <Link key={post.id} to={`/blog/${post.id}`} className="blog-card" style={{ textDecoration: 'none' }}>
             <div className="blog-img-wrapper">
               <img src={post.image} alt={post.title} className="blog-img" />
               <div className="blog-date">{post.date}</div>
@@ -25,11 +25,11 @@ export function Blog() {
               <span className="blog-category">{post.category}</span>
               <h3 className="blog-title">{post.title}</h3>
               <p className="blog-excerpt">{post.excerpt}</p>
-              <Link to={`/blog/${post.id}`} className="blog-link">
+              <span className="blog-link">
                 Leia mais <ArrowRight size={16} />
-              </Link>
+              </span>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
       

@@ -14,11 +14,18 @@ import { useReveal } from '../../hooks/useReveal';
 
 export function Home() {
   useReveal();
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(() => {
+    return sessionStorage.getItem('aragas-loaded') !== 'true';
+  });
+
+  const handleLoadComplete = () => {
+    setIsLoading(false);
+    sessionStorage.setItem('aragas-loaded', 'true');
+  };
 
   return (
     <>
-      {isLoading && <Loadscreen onComplete={() => setIsLoading(false)} />}
+      {isLoading && <Loadscreen onComplete={handleLoadComplete} />}
       <Header />
       <main>
         <Hero />

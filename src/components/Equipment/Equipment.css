@@ -152,7 +152,7 @@
   }
   
   .equipment-item {
-    min-width: 85vw;
+    min-width: 75vw;
     height: 280px;
     scroll-snap-align: start;
     flex-shrink: 0;
